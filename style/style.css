@@ -1,0 +1,33 @@
+.boxsizing {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.font-asp {
+    font-family: 'Asap Condensed', sans-serif
+}
+
+.index-bg {
+    background-image: linear-gradient(30deg, rgb(87, 86, 86) 55%, rgb(239, 125, 0) 55%);
+    background-position: 50%; 
+    height: 500px;
+}
+
+.button-slanted {
+    -ms-transform: skewX(-5deg);
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+}
+
+.button-slanted-content {
+    -ms-transform: skewX(5deg);
+    -webkit-transform: skewX(5deg);
+    transform: skewX(5deg);  
+    display: inline-block;
+}
+.text-skew {
+    -ms-transform: skewX(-5deg);
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+}

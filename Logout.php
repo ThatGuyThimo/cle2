@@ -5,6 +5,6 @@ session_start();
 session_destroy();
 
 // Redirect to login page
-header('Location: Index.php');
+header('Location: ./Index.php');
 // Exit the code.
 exit;

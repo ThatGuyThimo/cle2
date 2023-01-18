@@ -24,7 +24,7 @@ function addImageFile($uploadFile)
 
     //You should name it uniquely.
     $fileName = uniqid() . '_' . strtolower(str_replace(" ", "_", $uploadFile['name']));
-    if (!move_uploaded_file($uploadFile['tmp_name'], '../images/' . $fileName)) {
+    if (!move_uploaded_file($uploadFile['tmp_name'], './caseimages/' . $fileName)) {
         die('Failed to move uploaded file.');
     }
 
@@ -38,7 +38,7 @@ function addImageFile($uploadFile)
 function deleteImageFile($fileName)
 {
     //Unlink/deletes the file from the server
-    $removed = unlink('./images/' . $fileName);
+    $removed = unlink('./caseimages/' . $fileName);
 
     if ($removed == false) {
         die("Something went wrong with removing the image");
