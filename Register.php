@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
 
 </head>
 
-<body class="bg-no-repeat bg-cover bg-center bg-fixed min-h-screen pb-6 px-2 md:px-0">
+<body class="min-h-screen">
 
     <?php require_once "./includes/navbar.php" ?>
 
@@ -122,9 +122,8 @@ if (isset($_POST['submit'])) {
             <p class="text-black">Already got an account? <a href="Login.php" class="font-bold hover:underline">Log in</a>.</p>
         </div>
     </div>
-    <div class="absolute bottom-0 w-screen">
         <?php require_once "./includes/footer.php" ?>
-    </div>
+
 
 </body>
 

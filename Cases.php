@@ -36,7 +36,7 @@ mysqli_close($db);
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet" />
 
-<body class="bg-[#F1F1F1]">
+<body class="bg-[#F1F1F1] flex flex-col">
   <?php require "./includes/navbar.php" ?>
 
   <section>
@@ -77,9 +77,8 @@ mysqli_close($db);
 
   </section>
 
-  <div class="absolute bottom-0 w-screen">
     <?php require_once "./includes/footer.php" ?>
-  </div>
+
   </body>
 
 </html>

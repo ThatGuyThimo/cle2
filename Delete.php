@@ -106,9 +106,7 @@ if (isset($_POST['submit']) && isset($_POST['id'])) {
 
     </main>
 
-    <div class="absolute bottom-0 w-screen">
         <?php require_once "./includes/footer.php" ?>
-    </div>
 </body>
 
 </html>
