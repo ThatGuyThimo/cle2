@@ -2,10 +2,12 @@
 
 session_start();
 
-$id = $_GET['id'];
-$interior = $_GET['interior'];
-$date = $_GET['date'];
-$amount = $_GET['amount'];
+    require_once "includes/database.php";
+
+$id = mysqli_escape_string($db, $_GET['id']);
+$interior = mysqli_escape_string($db, $_GET['interior']);
+$date = mysqli_escape_string($db, $_GET['date']);
+$amount = mysqli_escape_string($db, $_GET['amount']);
 
 if (!isset($id) || !isset($interior) || !isset($date) || !isset($amount)) {
     header('Location: ./Cases.php');
@@ -13,8 +15,6 @@ if (!isset($id) || !isset($interior) || !isset($date) || !isset($amount)) {
 }
 
 if (isset($_SESSION['loggedInUser'])) {
-
-    require_once "includes/database.php";
 
     $email = $_SESSION['loggedInUser']['email'];
 
@@ -39,7 +39,6 @@ if (isset($_SESSION['loggedInUser'])) {
 
 if (isset($_POST['submit'])) {
     /** @var mysqli $db */
-    require_once "includes/database.php";
 
     // Get form data
     $email = mysqli_escape_string($db, $_POST['email']);
@@ -133,7 +132,9 @@ if (isset($_POST['submit'])) {
             <p class="text-black">got an account? <a href="Login.php" class="font-bold hover:underline">Log in</a>.</p>
         </div>
     </div>
-    <?php require_once "./includes/footer.php" ?>
+    <div class="absolute bottom-0 w-full">
+        <?php require_once "./includes/footer.php" ?>
+    </div>
 
 
 </body>

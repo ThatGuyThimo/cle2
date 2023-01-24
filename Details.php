@@ -183,7 +183,9 @@ if (isset($_GET['id'])) {
 
     </main>
 
-    <?php require_once "./includes/footer.php" ?>
+    <div class="absolute bottom-0 w-full">
+        <?php require_once "./includes/footer.php" ?>
+    </div>
 
 </body>
 

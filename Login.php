@@ -121,7 +121,7 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
 
-    <div class="mb-0">
+    <div class="absolute bottom-0 w-full">
         <?php require_once "./includes/footer.php" ?>
     </div>
 

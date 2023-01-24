@@ -122,8 +122,10 @@ if (isset($_POST['submit'])) {
             <p class="text-black">Already got an account? <a href="Login.php" class="font-bold hover:underline">Log in</a>.</p>
         </div>
     </div>
+    
+    <div class="absolute bottom-0 w-full">
         <?php require_once "./includes/footer.php" ?>
-
+    </div>
 
 </body>
 

@@ -89,7 +89,7 @@ if (isset($_POST['submit']) && isset($_POST['id'])) {
                             <form class="flex flex-col p-6" action="" method="post" enctype="multipart/form-data">
                                 <input name="id" id="id" value="<?= $_GET['id'] ?>" hidden>
                                 <div class="flex justify-center items-center">
-                                <img src="./caseimages/<?= $case['image'] ?>"/>
+                                <img src="./caseimages/<?= $case['image'] ?>" width="500"/>
                                 </div>
                                 <div class="flex flex-row">
                                     <a class="rounded button-slanted text-center inline-block bg-[#EF7D00] hover:bg-[#2D2D2D] transition duration-500 ease-in-out" href="./Cases.php">
@@ -105,8 +105,10 @@ if (isset($_POST['submit']) && isset($_POST['id'])) {
 
 
     </main>
-
+    
+    <div class="absolute bottom-0 w-full">
         <?php require_once "./includes/footer.php" ?>
+    </div>
 </body>
 
 </html>
